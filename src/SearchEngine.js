@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results.js";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
-  const [wordInput, setWordInput] = useState(null);
+  const [wordInput, setWordInput] = useState("");
+  const [results, setResults] = useState(null);
+  function handleResponse(response) {
+    setResults(response.data[0]);
+  }
+
   function search(event) {
     event.preventDefault();
   }
-  function handleResponse(response) {
-    console.log(response.data[0]);
-  }
-
   let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${wordInput}`;
   axios.get(apiUrl).then(handleResponse);
 
   function handleWordInputChange(event) {
-    event.preventDefault();
     setWordInput(event.target.value);
   }
   return (
@@ -29,6 +30,7 @@ export default function SearchEngine() {
         />
         <input type="submit" className="search-button" value="search" />
       </form>
+      <Results results={results} />
     </div>
   );
 }
