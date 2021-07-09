@@ -1,6 +1,6 @@
 body {
-  background-size: 100%;
-  background-image: url("./images/books.jpg");
+  background-size: cover;
+  background-image: url("./images/background.jpg");
 }
 p {
   text-align: center;
