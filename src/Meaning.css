@@ -1,3 +1,6 @@
 .Meaning p {
   text-align: left;
 }
+.Meaning p::first-letter {
+  text-transform: capitalize;
+}
