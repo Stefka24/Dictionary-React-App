@@ -1,9 +1,25 @@
+.SearchEngine section {
+  background: seashell;
+  border-radius: 7px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+}
 .SearchEngine form {
   text-align: center;
 }
-
+.SearchEngine input {
+  padding: 5px 6px;
+}
 .SearchEngine .search-form {
   width: 40%;
+}
+.SearchEngine .search-button {
+  color: black;
+  background: seashell;
+  border-radius: 3px;
+}
+.SearchEngine .search-button:hover {
+  background: black;
+  color: seashell;
 }
 .SearchEngine .source {
   text-align: center;

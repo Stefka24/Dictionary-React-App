@@ -36,7 +36,9 @@ export default function SearchEngine() {
         </a>{" "}
         by Stefka Bodurova
       </div>
-      <Results results={results} />
+      <section>
+        <Results results={results} />
+      </section>
     </div>
   );
 }
