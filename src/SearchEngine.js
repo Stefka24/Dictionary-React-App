@@ -30,6 +30,12 @@ export default function SearchEngine() {
         />
         <input type="submit" className="search-button" value="search" />
       </form>
+      <div className="source">
+        <a href="https://github.com/Stefka24/Dictionary-React-App">
+          Open source
+        </a>{" "}
+        by Stefka Bodurova
+      </div>
       <Results results={results} />
     </div>
   );

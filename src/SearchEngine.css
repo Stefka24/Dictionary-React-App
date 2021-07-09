@@ -5,3 +5,7 @@
 .SearchEngine .search-form {
   width: 40%;
 }
+.SearchEngine .source {
+  text-align: center;
+  font-size: 13px;
+}
