@@ -12,9 +12,9 @@ export default function SearchEngine() {
 
   function search(event) {
     event.preventDefault();
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${wordInput}`;
+    axios.get(apiUrl).then(handleResponse);
   }
-  let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${wordInput}`;
-  axios.get(apiUrl).then(handleResponse);
 
   function handleWordInputChange(event) {
     setWordInput(event.target.value);
