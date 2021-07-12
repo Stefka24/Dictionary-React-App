@@ -9,7 +9,7 @@ export default function Meaning(props) {
       {" "}
       <h3> {props.meaning.partOfSpeech}</h3>
       <div className="row">
-        <div className="col-9">
+        <div className="col-11">
           {props.meaning.definitions.map(function (definition, index) {
             return (
               <div key={index}>
