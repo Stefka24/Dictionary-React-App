@@ -2,5 +2,6 @@ body {
   background-size: cover;
   background-image: url("./images/background.jpg");
   background-attachment: fixed;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(50, 53, 68);
 }

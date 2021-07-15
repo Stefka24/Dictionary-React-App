@@ -5,19 +5,26 @@
   padding: 5px 6px;
 }
 .SearchEngine .search-form {
+  border: 1px solid #011a5a;
+  border-radius: 3px;
   width: 40%;
 }
 .SearchEngine .search-button {
   color: black;
-  background: seashell;
+  background: #ebebe9;
   border-radius: 3px;
-  width: 6%;
+  max-width: 12%;
+  border: 1px solid #011a5a;
+  transition: all 150ms ease-in-out;
 }
 .SearchEngine .search-button:hover {
-  background: darkblue;
-  color: seashell;
+  background: #011a5a;
+  color: #ebebe9;
 }
 .SearchEngine .source {
   text-align: center;
   font-size: 13px;
+}
+.SearchEngine a {
+  color: rgb(50, 53, 68);
 }

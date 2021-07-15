@@ -9,16 +9,16 @@ export default function Meaning(props) {
       {" "}
       <h3> {props.meaning.partOfSpeech}</h3>
       <div className="row">
-        <div className="col-11">
+        <div className="col-12">
           {props.meaning.definitions.map(function (definition, index) {
             return (
               <div key={index}>
-                <div>
+                <div className="Definition">
                   <strong>Definition: </strong>
                   {definition.definition}
-                  <Example example={definition.example} />
-                  <Synonyms synonyms={definition.synonyms} />
                 </div>
+                <Example example={definition.example} />
+                <Synonyms synonyms={definition.synonyms} />
               </div>
             );
           })}

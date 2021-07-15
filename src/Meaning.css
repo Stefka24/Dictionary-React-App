@@ -4,3 +4,6 @@
 .Meaning p::first-letter {
   text-transform: capitalize;
 }
+.Meaning .Definition {
+  font-size: 16px;
+}
