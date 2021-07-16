@@ -58,14 +58,23 @@ export default function SearchEngine(props) {
         <Results results={results} />
         <Photos photos={photos} />
         <div className="source">
+          This project was coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/stefka-bodurova-a8121282/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Stefka Bodurova{" "}
+          </a>
+          and is open-sourced on{" "}
           <a
             href="https://github.com/Stefka24/Dictionary-React-App"
             target="_blank"
             rel="noreferrer"
           >
-            Open source
+            GitHub
           </a>{" "}
-          by Stefka Bodurova
         </div>
       </div>
     );
