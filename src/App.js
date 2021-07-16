@@ -12,7 +12,7 @@ export default function App() {
             Dictionary
           </h1>
         </header>
-        <SearchEngine defaultKeyword="cactus" />
+        <SearchEngine defaultKeyword="Hello" />
       </div>
     </div>
   );
